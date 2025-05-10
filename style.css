@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+.container {
+    height: 99vh;
+    display: flex;
+    margin-top: 5px;
+}
+
+.left {
+    width: 25vw;
+    /* min-height: 50vh; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.left>* {
+    padding: 10px;
+}
+
+.home {
+    margin: 6.5px 1px 1px 5px;
+}
+
+.right {
+    width: 74.7vw;
+    height: 100%vh;
+    max-height: 98vh;
+    border-radius: 7px;
+    margin: 7.1px 6px 6px 6px;
+    /* overflow: scroll; */
+    background-color: #1f1f1f;
+    overflow: hidden;
+}
+
+.right>* {
+    padding: 10px;
+}
+
+.rightinside {
+    margin-top: 5.6px;
+    /* background-color: #1f1f1f; */
+    max-height: 98%;
+    height: 98%;
+    min-height: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.home ul li {
+    width: 25px;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding-top: 17px;
+    font-weight: bold;
+}
+
+.library {
+    height: 79.6%;
+    position: relative;
+    /* min-height: 50%; */
+    margin: 4.5px 1px 5px 5px;
+    overflow: auto;
+    flex: 1;
+    min-height: 0;
+    padding-bottom: 17px;
+}
+
+.heading {
+    display: flex;
+    gap: 15px;
+    padding-top: 14px;
+    font-weight: bold
+}
+
+.heading>img {
+    width: 23px;
+}
+
+.plusicon {
+    padding: 15px 10px 0px 0px;
+}
+
+.leftfooter {
+    border-radius: 7px 7px 0px 0px;
+    height: 40px;
+    overflow: hidden;
+    background-color: inherit;
+}
+
+.footerlinks * {
+    /* padding-top: 7px; */
+    color: rgb(210, 205, 205);
+    text-decoration: none;
+    font-size: 0.7rem;
+    cursor: pointer;
+    /* height: 100%; */
+    background-color: inherit;
+
+}
+
+.footerlinks {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 10px 0px;
+    background-color: inherit;
+    align-items: end;
+    padding-top: 10px;
+}
+
+.arrows {
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+nav.headder {
+    background-color: #585858;
+    padding: 8px;
+    width: 100%;
+}
+
+nav.headder button {
+    background-color: inherit;
+    color: white;
+    border: none;
+    padding: 4px;
+    margin-right: 25px;
+    font-size: 0.9rem;
+}
+
+#signup {
+    color: rgb(185, 185, 185);
+    transition: all 0.07s ease-out;
+    font-weight: bold;
+
+    &:hover {
+        font-size: 0.9rem;
+        color: white;
+    }
+}
+
+#login {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.05s ease-out;
+
+    &:hover {
+        transform: scale(1.03);
+        background-color: rgb(230, 230, 230);
+    }
+}
+
+
+.rightplaylist {
+    margin-top: 10px;
+    margin-left: 5px;
+    /* overflow: scroll; */
+    max-height: 90vh;
+    border-radius: 7px;
+    position: relative;
+    height: inherit;
+
+    padding-bottom: 40px;
+}
+
+.playlistheading {
+    font-size: 1.7rem;
+}
+
+.cardcontainer {
+    display: flex;
+    margin-top: 20px auto 0px auto;
+    gap: 4px;
+    flex-wrap: wrap;
+    max-height: 90%;
+    /* height: 100%; */
+    border-radius: inherit;
+    align-items: center;
+    overflow: scroll;
+
+}
+
+
+
+.card {
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 300px;
+    position: relative;
+    background-color: transparent;
+
+    &:hover {
+        background-color: #2a2929;
+    }
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 7px;
+    border-radius: 10px;
+}
+
+.card>* {
+    padding-top: 3px;
+}
+
+.playbtncontainer {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 150px;
+    right: 15px;
+    opacity: 0%;
+    transition: all 0.2s ease-out;
+}
+
+@keyframes playbtnbrightness {
+    from {
+        filter: brightness(1);
+        transform: scale(1);
+    }
+
+    to {
+        filter: brightness(1.1);
+        transform: scale(1.08);
+    }
+}
+
+.playbtncontainer>img {
+    &:hover {
+        animation: playbtnbrightness 0.1s ease-in-out forwards;
+    }
+
+    &:active {
+        animation: playbtnbrightness 0.1s ease-in-out backwards;
+    }
+}
+
+.playbtndisplay {
+    top: 144px;
+    opacity: 100%;
+}
+
+
+.playbar {
+    position: absolute;
+    bottom: 1px;
+    width: 96%;
+    align-self: center;
+    height: 70px;
+    background-color: rgb(41, 40, 40);
+    border-radius: 20px;
+    border: 1px solid rgb(161, 161, 161);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.playbaricons {
+    align-self: center;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -7px;
+
+}
+
+.songtimelinediv {
+    width: 98%;
+    display: flex;
+    height: 2px;
+    justify-content: flex-start;
+    gap: 40px;
+    align-self: flex-start;
+    position: relative;
+    right: 10px;
+}
+
+.songtimeline {
+    border: 1px solid white;
+    width: 90%;
+    height: 2px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.circle {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50px;
+    position: relative;
+    top: -5px;
+    left: -1px;
+    transition: left 0.1s;
+}
+
+.time {
+    position: relative;
+    bottom: 558%;
+    left: 3%;
+}
+
+
+.songlist {
+    margin: 30px 0px 5px 0px;
+    height: calc(100%-100px);
+    overflow: scroll;
+}
+
+.songlist>ul {
+    list-style: none;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.songslistitem {
+    padding: 14px 7px;
+    border-radius: 7px;
+
+    &:hover {
+        background-color: #434343;
+    }
+
+}
+
+
+.songslistitem>span {
+    margin-right: 42px;
+}
+
+.songlistitemimg {
+    width: 25px;
+}
+
+.songslistitem>.img2 {
+    position: absolute;
+    right: 20px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.songlistulist {
+    height: calc(100%-100px);
+}

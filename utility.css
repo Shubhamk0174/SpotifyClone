@@ -1,0 +1,136 @@
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.justify-center{
+    justify-content: center;
+}
+.justify-center-end{
+    justify-content: end;
+}
+
+.align-content{
+    justify-content: center;
+}
+
+.item-center{
+    align-items: center;
+}
+
+.b1{
+    border: 1px solid lightgreen;
+}
+
+.bgblack{
+    background-color: black;
+    color: white;
+}
+
+.invertsvg{
+    filter: invert(1);
+}
+
+.bggrey{
+    background-color:  #1f1f1f;
+}
+
+.rounded{
+    border-radius: 7px;
+}
+
+.m-1{
+    margin: 5px;
+}
+
+
+.p-1{
+    padding: 10px 10px;
+}
+
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.g-1{
+    gap: 15px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.m-nobottom{
+    margin: 5px 5px 1px 5px;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+.m-top-1{
+    margin-top: 4px;
+}
+
+
+.para1{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.para2{
+font-size: 0.9rem;
+}
+
+.justify-self-end{
+    justify-self: end;
+}
+
+.pos-relative{
+    position: relative;
+}
+
+.display-block{
+    display: block;
+}
+
+.display-none{
+    display: none;
+}
+
+
+
+
+/*         Scroll bar          */
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1f1f1f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #404040;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-corner {
+  background: #1f1f1f;
+}
