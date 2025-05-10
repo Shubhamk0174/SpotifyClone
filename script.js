@@ -13,7 +13,7 @@ const playprevious = document.querySelector("#previous")
 
 
 async function getSongs() {
-    let a = await fetch("./songs/playlist1/");
+    let a = await fetch("https://github.com/Shubhamk0174/SpotifyClone/tree/main/Songs/Playlist1");
     let response = await a.text();
     // console.log(response);
     let div = document.createElement("div");
