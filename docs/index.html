@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <div class="container flex bgblack">
+        <div class="left ">
+            <div class="home bggrey rounded p-1">
+                <div class="logo invertsvg pointer"><img src="icons/logo.svg" height="30px" alt=""></div>
+                <!-- <div class="logo pointer"><img src="icons/logo2.svg" height="30px" alt=""></div> -->
+                <ul>
+                    <li class="pointer"><img class="invertsvg" src="icons/home.svg" alt="home">Home</li>
+                    <li class="pointer"><img class="" src="icons/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library flex-col bggrey rounded">
+
+                <div class="flex space-between">
+
+                    <div class="heading">
+                        <img src="icons/playlist.svg" alt="">
+                        <b>Your Library</b>
+                    </div>
+
+                    <div class="plusicon flex pointer "><img src="icons/plus.svg" width="15px" class="invertsvg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="songlist">
+                    <ul class="songlistulist flex-col">
+                        
+                    </ul>
+                </div>
+
+                <div class="leftfooter bggrey">
+                    <div class="footerlinks flex flex-wrap g-1">
+                        <div>
+                            <a href="https://www.spotify.com/in-en/legal/">
+                                <span>Legal</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                                <span>Safety & Privacy Center</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                                <span>Privacy Policy</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                                <span>Cookies</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                                <span>About Ads</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.spotify.com/in-en/accessibility/">
+                                <span>Accessibility</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="right ">
+            <div class="rightinside bggrey rounded">
+
+                <nav class="headder flex space-between bggrey rounded">
+                    <div class="arrows flex">
+                        <img src="icons/arrow-left.svg" class="invertsvg pointer" alt="">
+                        <img src="icons/arrow-right.svg" class="invertsvg pointer" alt="">
+                    </div>
+
+                    <div class="buttons">
+                        <button id="signup" class="pointer">Sign up</button>
+                        <button id="login" class="pointer">Log in</button>
+                    </div>
+                </nav>
+
+
+                <div class="rightplaylist ">
+                    <h2 class="playlistheading">Playlists</h2>
+                    <div class="cardcontainer flex">
+
+
+                        <!-- <div class="card pointer">
+                            <div class="playbtncontainer pointer">
+                                <img src="icons/playbtn.svg" class="playbtn" alt="" height="45px" width="45px">
+                            </div>
+                            <img src="Songs/Playlist1/playlistthumbnail.png" class="cardimg" alt="">
+                            <p class="para1 ">Happy Hits</p>
+                            <p class="para2 m-top-1">This is your song to peace</p>
+                        </div> -->
+
+                        
+                    </div>
+
+                </div>
+                <div class="playbar">
+                    <div class="playbaricons flex">
+                        <img src="icons/play-previous.svg" fill="green " alt="" height="30px"
+                            class="playbaricon invertsvg" id="previous">
+                        <img src="icons/play.svg" alt="" height="30px" width="30px" class="playbaricon invertsvg" id="playpause">
+                        <img src="icons/play-next.svg" alt="" height="30px" class="playbaricon invertsvg" id="next">
+                    </div>
+                    <div class="songtimelinediv pointer                    ">
+                        <div class="time">
+                            01:01
+                        </div>
+                        <div class="songtimeline">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="temp.js"></script>
+
+</body>
+
+</html>
